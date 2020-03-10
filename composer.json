@@ -1,5 +1,5 @@
 {
-    "name": "jroman00/war",
+    "name": "jroman00/war-game",
     "autoload": {
         "psr-4": {
             "App\\": "src"
