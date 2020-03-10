@@ -110,10 +110,10 @@ class WarGame
 
                 /** @var Card $potCard */
                 foreach ($this->pot as $potCard) {
-                    $potMessage .= $potCard->getDisplayValue() . ',';
+                    $potMessage .= $potCard->getDisplayValue() . ', ';
                 }
 
-                $this->log->log(LogLevel::INFO, rtrim($potMessage, ','));
+                $this->log->log(LogLevel::INFO, rtrim($potMessage, ', '));
 
                 $this->player1->addCards($this->pot);
                 $this->pot = new CardCollection();
