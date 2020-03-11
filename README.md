@@ -36,7 +36,7 @@ To connect to a running instance:
 docker-run exec war-game bash
 ```
 
-Or connect to a new instance:
+To run a new instance:
 
 ```bash
 docker-run run --rm war-game bash
