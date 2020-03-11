@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a8eb54bd24fd5a7a57709a5cf2d5c8b",
+    "content-hash": "7c2a8d0f5771f7eb423e1da96943fbc6",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -2417,49 +2417,59 @@
     "packages-dev": [
         {
             "name": "jroman00/php-coding-standards",
-            "version": "v1.0.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jroman00/php-coding-standards.git",
-                "reference": "a9415dc20c1cd212cdf341f1d2778998f278e629"
+                "reference": "d4eee62c666572895454ef92baf8cff938e78588"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jroman00/php-coding-standards/zipball/a9415dc20c1cd212cdf341f1d2778998f278e629",
-                "reference": "a9415dc20c1cd212cdf341f1d2778998f278e629",
+                "url": "https://api.github.com/repos/jroman00/php-coding-standards/zipball/d4eee62c666572895454ef92baf8cff938e78588",
+                "reference": "d4eee62c666572895454ef92baf8cff938e78588",
                 "shasum": ""
             },
+            "require": {
+                "php": "^7.0"
+            },
             "require-dev": {
-                "squizlabs/php_codesniffer": "^2.6"
+                "phpunit/phpunit": "^6.5",
+                "squizlabs/php_codesniffer": "^3.3"
             },
             "type": "coding-standard",
             "scripts": {
-                "phpcs": [
-                    "./vendor/bin/phpcs -p --standard=jroman00/ruleset.xml jroman00/"
-                ],
                 "phpcbf": [
-                    "./vendor/bin/phpcbf --standard=jroman00/ruleset.xml jroman00/"
+                    "./vendor/bin/phpcbf -p Jroman00"
+                ],
+                "phpcs": [
+                    "./vendor/bin/phpcs -p Jroman00"
+                ],
+                "phpunit": [
+                    "./vendor/bin/phpunit --configuration phpunit.xml"
+                ],
+                "phpunit-coverage": [
+                    "./vendor/bin/phpunit --configuration phpunit.xml --coverage-html test-reports/html"
                 ]
             },
             "description": "Additional CodeSniffer rules",
             "support": {
-                "source": "https://github.com/jroman00/php-coding-standards/tree/v1.0",
+                "source": "https://github.com/jroman00/php-coding-standards/tree/v1.7.1",
                 "issues": "https://github.com/jroman00/php-coding-standards/issues"
             },
-            "time": "2017-12-18T22:12:04+00:00"
+            "time": "2018-07-02T18:25:46+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.2.2",
+            "version": "3.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "d7c00c3000ac0ce79c96fcbfef86b49a71158cd1"
+                "reference": "dceec07328401de6211037abbb18bda423677e26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d7c00c3000ac0ce79c96fcbfef86b49a71158cd1",
-                "reference": "d7c00c3000ac0ce79c96fcbfef86b49a71158cd1",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/dceec07328401de6211037abbb18bda423677e26",
+                "reference": "dceec07328401de6211037abbb18bda423677e26",
                 "shasum": ""
             },
             "require": {
@@ -2469,7 +2479,7 @@
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0"
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
             },
             "bin": [
                 "bin/phpcs",
@@ -2492,12 +2502,12 @@
                 }
             ],
             "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
-            "homepage": "http://www.squizlabs.com/php-codesniffer",
+            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
             "keywords": [
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-12-19T21:44:46+00:00"
+            "time": "2020-01-30T22:20:29+00:00"
         }
     ],
     "aliases": [],

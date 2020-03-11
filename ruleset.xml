@@ -2,16 +2,22 @@
 <ruleset name="CodingStandard">
     <description>The coding standard</description>
 
-    <!-- PSR2 -->
-    <rule ref="PSR2">
-        <exclude name="Generic.Files.LineLength" />
-    </rule>
+    <!-- Additional configs -->
+    <config name="installed_paths" value="vendor/jroman00/php-coding-standards" />
+
+    <!-- Jroman00 -->
+    <rule ref="Jroman00" />
 
     <!-- Generic -->
     <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
     <rule ref="Generic.ControlStructures.InlineControlStructure" />
     <rule ref="Generic.Files.LineEndings" />
     <rule ref="Generic.Formatting.SpaceAfterCast" />
+
+    <!-- PSR -->
+    <rule ref="PSR2">
+        <exclude name="Generic.Files.LineLength" />
+    </rule>
 
     <!-- Squiz -->
     <rule ref="Squiz.Commenting.FunctionCommentThrowTag" />
@@ -22,7 +28,4 @@
         </properties>
     </rule>
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace" />
-
-    <!-- Misc -->
-    <rule ref="vendor/jroman00/php-coding-standards/src/" />
 </ruleset>
