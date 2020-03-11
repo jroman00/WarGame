@@ -33,5 +33,11 @@ docker-compose down
 To connect to a running instance:
 
 ```bash
+docker-run exec war-game bash
+```
+
+Or connect to a new instance:
+
+```bash
 docker-run run --rm war-game bash
 ```

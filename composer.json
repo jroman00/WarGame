@@ -2,7 +2,7 @@
     "name": "jroman00/war-game",
     "description": "A simple PHP application to play the card game War",
     "config": {
-      "sort-packages": true
+        "sort-packages": true
     },
     "autoload": {
         "psr-4": {
@@ -10,13 +10,13 @@
         }
     },
     "repositories": [
-      {
-          "type": "vcs",
-          "url": "git@github.com:jroman00/php-coding-standards.git"
-      }
+        {
+            "type": "vcs",
+            "url": "git@github.com:jroman00/php-coding-standards.git"
+        }
     ],
     "require": {
-        "laravel/framework": "5.5.27"
+        "laravel/framework": "^5.8.0"
     },
     "require-dev": {
         "jroman00/php-coding-standards": "^1.7",
