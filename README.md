@@ -56,5 +56,5 @@ make shell
 To tail container logs:
 
 ```bash
-make logs
+make log
 ```

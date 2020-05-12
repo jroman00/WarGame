@@ -9,7 +9,7 @@ lint:
 lint-fix:
 	docker-compose run --rm war-game composer run lint-fix
 
-logs:
+log:
 	docker-compose logs -f war-game
 
 run:
@@ -35,6 +35,7 @@ help:
 	@echo "  |_ init                  - Initialize the local env, install dependencies, and build all containers"
 	@echo "  |_ lint                  - Run lint checks"
 	@echo "  |_ lint-fix              - Run lint checks and fix issues"
+	@echo "  |_ log                   - Tail container logs"
 	@echo "  |_ run                   - Run an arbitrary command in the web container. Ex usage: make run cmd=\"your command\""
 	@echo "  |_ shell                 - Start a shell session in a new container"
 	@echo "  |_ start                 - Start containers and run the application"
@@ -46,6 +47,7 @@ help:
 	init
 	lint
 	lint-fix
+	log
 	run
 	shell
 	start
