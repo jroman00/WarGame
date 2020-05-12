@@ -1,43 +1,60 @@
 # jroman00/war-game
 
-## Build
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
 
-To build the image:
+<!-- code_chunk_output -->
+
+- [Initialize](#initialize)
+- [Stop](#stop)
+- [Run](#run)
+- [Debugging](#debugging)
+  - [Shell](#shell)
+  - [Logs](#logs)
+
+<!-- /code_chunk_output -->
+
+---
+
+## Initialize
+
+To initialize and start the application:
 
 ```bash
-docker-compose build
+make init
+```
+
+To see it in action, point your browser to http://localhost:8080
+
+## Stop
+
+To stop the application:
+
+```bash
+make stop
 ```
 
 ## Run
 
-To run the web server:
+To start the application:
 
 ```bash
-docker-compose up -d war-game
+make run
 ```
 
-## In Action
+## Debugging
 
-To see it in action, point your browser to https://localhost:8080
+### Shell
 
-## Cleanup
-
-To stop and remove the container, run:
+To connect to a new container instance:
 
 ```bash
-docker-compose down
+make shell
 ```
 
-## Debug
+### Logs
 
-To connect to a running instance:
-
-```bash
-docker-run exec war-game bash
-```
-
-To run a new instance:
+To tail container logs:
 
 ```bash
-docker-run run --rm war-game bash
+make logs
 ```
