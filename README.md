@@ -1,8 +1,5 @@
+<!-- omit in toc -->
 # jroman00/war-game
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
 
 - [Initialize](#initialize)
 - [Stop](#stop)
@@ -10,8 +7,6 @@
 - [Debugging](#debugging)
   - [Shell](#shell)
   - [Logs](#logs)
-
-<!-- /code_chunk_output -->
 
 ---
 
