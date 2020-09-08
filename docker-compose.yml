@@ -8,3 +8,4 @@ services:
       - "8080:8080"
     volumes:
       - ${PWD}:/var/www:delegated
+      - ~/.composer/auth.json:/root/.composer/auth.json:ro
