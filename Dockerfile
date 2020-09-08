@@ -1,4 +1,4 @@
-FROM php:7.4.3-cli
+FROM php:7.4.10-cli
 
 # Install services
 RUN apt-get update \
