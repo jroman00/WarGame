@@ -4,25 +4,25 @@ init:
 	bash ./bin/local-init.sh
 
 lint:
-	docker-compose run --rm war-game composer run lint
+	docker compose run --rm war-game composer run lint
 
 lint-fix:
-	docker-compose run --rm war-game composer run lint-fix
+	docker compose run --rm war-game composer run lint-fix
 
 log:
-	docker-compose logs -f war-game
+	docker compose logs -f war-game
 
 run:
-	docker-compose run --rm war-game $(cmd)
+	docker compose run --rm war-game $(cmd)
 
 shell:
-	docker-compose run --rm war-game bash
+	docker compose run --rm war-game bash
 
 start:
-	docker-compose up -d
+	docker compose up -d
 
 stop:
-	docker-compose stop
+	docker compose stop
 
 #############################################################
 # Help Documentation

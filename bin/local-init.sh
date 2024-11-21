@@ -10,26 +10,26 @@ readonly APP_ROOT=$(cd $BIN_ROOT/../ && pwd -P)
 
 # Main functionality of the script
 main() {
-  echo "Initializing war-game repo..."
+  echo "Initializing application..."
 
   (
     # Make sure script is running from the main application directory
     cd $APP_ROOT
 
     # Build docker images
-    echo "Building docker images with docker-compose..."
-    docker-compose build
+    echo "Building docker images..."
+    docker compose build
 
     # Install dependencies
     echo "Installing dependencies..."
-    docker-compose run --rm war-game composer install
+    docker compose run --rm war-game composer install
 
     # Start docker containers
-    echo "Starting containers with docker-compose..."
-    docker-compose up -d
+    echo "Starting containers..."
+    docker compose up -d
   )
 
-  echo "war-game repo initialized successfully!"
+  echo "Application initialized successfully!"
 }
 
 # Function that outputs usage information
